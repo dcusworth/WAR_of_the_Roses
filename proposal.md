@@ -31,4 +31,19 @@ We plan to combine all 19 seasons of data and then perform leave-one-out cross v
 We plan to show clips from the television show to introduce the format of the game, and what features we find important to the analyis. We will provide voice-overs to highlight key points to the audience. For the website, we plan to guide the reader through a week-by-week synopsis, showing how probabilities change as the show unfolds.
 
 ## Schedule / timeline
+
+Deadline: Completed Actions
+11/15   : Found and figured out how to access data sources, such as: 
+           1) transcripts 
+           2) closed captions 
+           3) photos (for PCA) 
+           4) wiki pages for biographical data
+11/22   : Scraped data, cleaned data
+11/29   : Drafted and ran initial models, made visualizations
+12/6    : Made webpage, started screencast
+12/10   : Finish screencast
  
+## Team Member Contributions
+Sarah:
+Daniel:
+Kathryn:
