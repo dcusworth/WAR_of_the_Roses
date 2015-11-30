@@ -1,2 +1,5 @@
-# MR-DC-KH-Final-Project
-Hi all! Let's use this repo for our CS109 project. I figured this would be the best way to reach MR, since emails were not provided. Let's meet this week.
+# Distances Branch
+
+This branch contains two notebooks - Distances and Geo_Cluster. Distances computes the spherical distance between the bachelor's hometown and each contestant's hometown. Geo_Cluster categorizes where each contestant is from in broader regional districts.
+
+-DC
