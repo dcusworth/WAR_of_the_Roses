@@ -1,0 +1,196 @@
+,age,elimination week,hometown,name,occupation,season
+0,25,Winner,"Dallas, Texas",Melissa Rycroft,Sales Representative,13
+1,24,Runner-up,"Grand Rapids, Michigan",Molly Malaney,Department Store Buyer,13
+2,29,7,"Peace River, Alberta",Jillian Harris,Interior Designer,13
+3,24,6,"Carlsbad, California",Naomi Rose Crespo,Flight Attendant,13
+4,34,5,"Huntsville, Alabama",Stephanie Hogan,Single Mother & Medical Marketing Rep.,13
+5,27,4,"Marlboro, New Jersey",Lauren Wanger,Teacher,13
+6,25,4,"Sewickley, Pennsylvania",Megan Parris,Single Mother and Lacrosse Coach,13
+7,29,4,"Marshall, Missouri",Shannon Bair,Dental Hygienist,13
+8,29,4,"Blue Island, Illinois","Nicole ""Nikki"" Kaapke",Administrative Assistant,13
+9,25,3,"Monroe, Connecticut",Erica,Account Executive,13
+10,27,3,"Lee's Summit, Missouri",Kari Fajen,Account Executive,13
+11,27,3,"Morton, Illinois",Natalie Getz,Human Resources Recruiter,13
+12,27,2,"Recife, Pernambuco, Brazil",Raquel Medeiros,Medical Student,13
+13,32,2,"Batavia, New York",Sharon Staebell,Teacher,13
+14,28,2,"Boise, Idaho",Lisa Gonzalez,Public Relations Associate,13
+15,24,1,"Phoenix, Arizona",Ann Lueders,Flight Attendant,13
+16,26,1,"Mt. Carmel, Pennsylvania",Dominique,Medical Sales Rep.,13
+17,23,1,"Seattle, Washington",Emily,Casino Marketing Rep.,13
+18,26,1,"Springfield, Massachusetts",Jackie,Wedding Coordinator,13
+19,26,1,"Columbus, Ohio",Julie,Teacher,13
+20,25,1,"Calgary, Alberta",Nicole,Menswear Buyer,13
+21,36,1,"Southfield, Michigan",Renee,Jewelry Designer,13
+22,23,1,"Stockton, California",Shelby,Account Executive,13
+23,24,1,"Orem, Utah",Stacia,Single Mother & Charity Accountant,13
+24,28,1,"Salt Lake City, Utah",Treasure,Single Mother and Nurse Practitioner,13
+25,23,Winner,"Geneva, Florida",Vienna Girardi,Marketing Representative,14
+26,25,Runner-up,"Newberg, Oregon",Tenley Molzahn,College Admissions,14
+27,26,7,"New York, New York",Gia Allemand,Swimsuit Model,14
+28,25,6,"Williamstown, Massachusetts",Ali Fedotowsky,Advertising Account Manager,14
+29,23,5,"Kissimmee, Florida",Corrie Adamson,Wardrobe Consultant,14
+30,25,4,"North Potomac, Maryland",Ashleigh Hunt,Account Manager,14
+31,25,4,"Oakville, Ontario",Jessie Sulidis,Cosmetic Sales Manager,14
+32,25,4,"Lexington, Kentucky",Kathryn Sherlock,Corporate Flight Attendant,14
+33,30,4,"La Follette, Tennessee",Ella Nolan,Hair Stylist,14
+34,29,3,"Imperial, Nebraska",Elizabeth Kitt (NE),Nanny,14
+35,32,3,"San Bernardino, California",Valishia Savage,Homemaker,14
+36,26,3,"Anaheim, California",Michelle Kujawa,Office Manager,14
+37,29,2,"Pittsburgh, Pennsylvania",Ashley Elmore,Teacher,14
+38,25,2,"San Diego, California",Christina McCasland,Restaurant Manager,14
+39,28,alified in week 2,"Richmond, Virginia",Rozlyn Papa,Model/Make-Up Artist,14
+40,25,1,"Galloway, Ohio",Alexa McAllister,Entrepreneur,14
+41,24,1,"Winfield, Illinois",Caitlyn McCabe,Spokesmodel,14
+42,29,1,"Santa Rosa, California",Channy Choch,Mortgage Loan Officer,14
+43,29,1,"Union, Kentucky",Elizabeth Kreft (D.C.),"Captain, Air National Guard",14
+44,23,1,"West Chester, Ohio",Emily Harkins,Fitness Model,14
+45,24,1,"Norman, Oklahoma",Kimberly Sullivan,NBA Dancer,14
+46,25,1,"Aurora, Colorado",Kirsten Pittman,Waitress,14
+47,25,1,"Scottsdale, Arizona",Sheila Marie Lidner,Commercial Pilot,14
+48,24,1,"Morris, Illinois",Stephanie Mueller,Dance Teacher,14
+49,31,1,"Calgary, Alberta",Tiana Kruzel,Medical Technician,14
+50,25,Winner,"Morgantown, West Virginia",Emily Maynard,Children's Hospital Event Planner,15
+51,28,Runner-up,"Mercer Island, Washington",Chantal O'Brien,Executive Assistant,15
+52,26,9,"Madawaska, Maine",Ashley Hebert,Dental Student,15
+53,25,8,"Chico, California",Shawntel Newton,Funeral Director,15
+54,30,7,"Salt Lake City, Utah",Michelle Money,Hair stylist,15
+55,25,7,"Woodinville, Washington",Britt Billmaier,Food writer,15
+56,26,6,"Newport, Rhode Island",Jackie Gordon,Artist,15
+57,24,6,"Columbus, Ohio",Alli Travis,Apparel merchant,15
+58,24,5,"Ottawa, Kansas",Lisa Morrisey,Marketing Coordinator,15
+59,26,5,"Mesa, Arizona",Marissa May,Sports Publicist,15
+60,26,5,"Ellerbe, North Carolina",Ashley Spivey,Nanny,15
+61,25,4,"Plano, Texas",Lindsay Hill,First grade teacher,15
+62,30,4,"Princeton, New Jersey",Meghan Merritt,Fashion Marketer,15
+63,26,4,"Quincy, Massachusetts",Stacey Quirpel,Bartender,15
+64,27,3,"Orlando, Florida",Kimberly Coon,Marketing Coordinator,15
+65,27,3,"Denver, Colorado",Sarah Powell,Real Estate Broker,15
+66,25,3,"Vail, Colorado",Madison Garton,Model,15
+67,28,2,"Sherwood Park, Alberta",Keltie Colleen,Radio City Rockette,15
+68,32,2,"Westport, Connecticut",Melissa Schreiber,Waitress,15
+69,29,2,"Fullerton, California",Raichel Goodyear,Manscaper,15
+70,25,1,"Holland, Pennsylvania",Britnee,Paralegal,15
+71,30,1,"Davie, Florida",Cristy Caserta,Attorney,15
+72,26,1,"Seattle, Washington","Jessica ""J""",Operations Manager,15
+73,28,1,"Frisco, Texas",Jill Ruskowski,Sales director,15
+74,27,1,"Tampa, Florida",Lacey Garbelman,Insurance agent,15
+75,26,1,"Culpeper, Virginia",Lauren Moore,High School Teacher,15
+76,27,1,"Dix Hills, New York",Lisa P.,Sales Consultant,15
+77,30,1,"Mission Viejo, California",Rebecca,Esthetician,15
+78,28,1,"Palos Hills, Illinois",Renee Halpin,Nanny,15
+79,25,1,"Saginaw, Michigan",Sarah Ledtke,Musical Theatre Performer,15
+80,28,Winner,"Scottsdale, Arizona",Courtney Robertson,Model,16
+81,27,Runner-up,"Newcastle, Washington",Lindzi Cox,Business development manager,16
+82,26,9,"Hurst, Texas",Nicki Sterling,Dental hygienist,16
+83,24,8,"Clarksville, Tennessee",Kacie Boguskie,Administrative assistant,16
+84,27,7,"Chapel Hill, North Carolina",Emily O'Brien,PhD Student,16
+85,27,7,"Southampton, Massachusetts",Rachel Truehart,Fashion sales representative,16
+86,25,6,"Dryden, New York",Jamie Otis,Registered nurse,16
+87,26,ed in week 6,"Leawood, Kansas",Casey Shteamer,Trading clerk,16
+88,33,6,"Rutherfordton, North Carolina",Blakeley Jones,VIP cocktail waitress,16
+89,28,5,"Cache, Oklahoma",Jennifer Fritsch,Accountant,16
+90,24,5,"Chicago, Illinois",Elyse Myers,Personal trainer,16
+91,33,4,"Yuba, California",Monica Spannbauer,Dental consultant,16
+92,26,4,"Pittsburgh, Pennsylvania",Samantha Levey,Advertising account manager,16
+93,27,3,"Newton, Massachusetts",Jaclyn Swartz,Advertising account manager,16
+94,23,3,"Charlottesville, Virginia",Erika Uhlig,Law student,16
+95,26,3,"Colorado Springs, Colorado",Brittney Schreiner,Medical sales representative,16
+96,28,2,"Cincinnati, Ohio",Shawn Reynolds,Financial advisor,16
+97,27,2,"Loveland, Ohio",Jenna Burke,Blogger,16
+98,23,1,"Port Coquitlam, British Columbia",Amber Bacon,Labor and delivery nurse,16
+99,28,1,"Waverly, Nebraska",Amber Tierney,Critical care nurse,16
+100,25,1,"Detroit, Michigan",Anna Snowball,Student,16
+101,30,1,"San Gabriel, California",Dianna Martinez,Nonprofit director,16
+102,34,1,"Salyersville, Kentucky",Holly Johnson,Pharmaceutical sales representative,16
+103,29,1,"London, England",Lyndsie James,Internet entrepreneur,16
+104,35,1,Massapequa Park,Shira Astrof,Actress,16
+105,26,Winner,"Seattle, Washington",Catherine Giudici,Graphic Designer,17
+106,24,Runner-up,"Fort Bragg, North Carolina",Lindsay Yenter,Substitute Teacher,17
+107,32,9,"Houston, Texas",AshLee Frazier,Personal Organizer,17
+108,26,8,"Northglenn, Colorado",Desiree Hartsock,Bridal Stylist,17
+109,24,7,"Fort Smith, Arkansas",Lesley Murphy,Political Consultant,17
+110,24,7,"Las Vegas, Nevada",Tierra LiCausi,Leasing Consultant,17
+111,24,6,"Belmont, California",Daniella McBride,Commercial Casting Associate,17
+112,29,6,"San Diego, California",Selma Alameri,Real Estate Dealer,17
+113,26,6,"Evergreen, Colorado",Sarah Herron,Advertising Executive,17
+114,24,5,"Houston, Texas",Robyn Howard,Oil Field Account Manager,17
+115,25,5,"Ormond Beach, Florida",Jackie Parr,Cosmetics Consultant,17
+116,26,4,"Bakersfield, California",Amanda Meyer,Fit Model,17
+117,28,4,"Ruskin, Florida",Leslie Hughes,Poker Dealer,17
+118,25,3,"Darien, Wisconsin",Kristy Kaminski,Model,17
+119,30,3,"Troutdale, Oregon",Taryn Renee Daniels,Health Club Manager,17
+120,25,3,,Kacie Boguskie,unknown,17
+121,25,2,"Pittsburgh, Pennsylvania",Brooke Burchette,Community Organizer,17
+122,31,2,"Salt Lake City, Utah",Diana Weeks Willardson,Salon Owner,17
+123,27,2,"Woodstock, Illinois",Katie Levans,Yoga Instructor,17
+124,25,1,"Garner, North Carolina",Ashley Harper,Fashion Model,17
+125,28,1,"Macomb, Michigan",Ashley Palenkas,Hair Stylist,17
+126,28,1,"Nashville, Tennessee",Kelly Dutton,Cruise Ship Entertainer,17
+127,29,1,"Agoura Hills, California",Keriann Miranda,Entrepreneur,17
+128,24,1,"Valencia, California",Lacey Latka,Graduate Student,17
+129,27,1,"Cranston, Rhode Island",Lauren Marchetti,Journalist,17
+130,25,1,"New York City, New York",Paige Vigil,Jumbotron Operator,17
+131,26,Winner,"Kearney, Missouri",Nikki Ferrell,Pediatric Nurse,18
+132,32,Runner-up,"Sacramento, California",Clare Crawley,Hairstylist,18
+133,26,9,"Atlanta, Georgia",Andi Dorfman,Assistant District Attorney,18
+134,32,8,"Martha's Vineyard, Massachusetts",Renee Oteri,Real Estate Agent,18
+135,24,7,"Lexington, Ohio",Chelsie Webster,Science Educator,18
+136,29,rew in week 7,"Ottawa, Ontario",Sharleen Joynt,Opera Singer,18
+137,29,6,"Iowa City, Iowa",Kat Hurd,Medical Sales Representative/NBA Dancer,18
+138,22,6,"Shelby Charter Township, Michigan",Cassandra Ferguson,Former NBA Dancer,18
+139,26,5,"Orland Park, Illinois",Alli Restko,Nanny,18
+140,25,5,"Litchfield, Illinois",Danielle Ronco,Psychiatric Nurse,18
+141,27,5,"Conyers, Georgia",Kelly Travis,Dog Lover,18
+142,27,4,"Forty Fort, Pennsylvania",Elise Mosca,First Grade Teacher,18
+143,26,4,"Austin, Texas",Lauren Solomon,Music Composer,18
+144,24,3,"Aurora, Illinois",Christy Hansen,Marketing Manager,18
+145,25,3,"Santa Barbara, California",Lucy ,Free Spirit,18
+146,27,2,"Clermont, Florida",Amy Long,Local News Reporter,18
+147,27,2,"Miami, Florida",Chantel Forrest,Account Manager,18
+148,24,2,"Porto Alegre, Brazil",Victoria Lima,Legal Assistant,18
+149,24,1,"Tampa, Florida",Alexis Morgado,Communications Director/ NHL  Ice Girl,18
+150,31,1,"Apopka, Florida",Amy Jokinen,Massage Therapist,18
+151,25,1,"Roanoke, Texas",Ashley Poe,Grade School Teacher,18
+152,23,1,"Miami, Florida",Christine Llano,Police Support Specialist,18
+153,23,1,"Rockford, Illinois",Kylie Lewis,Interior Designer,18
+154,25,1,"Antelope Acres, California",Lacy Faddoul,Nursing Home Owner,18
+155,25,1,"Edmond, Oklahoma",Lauren Higginson,Mineral Coordinator,18
+156,25,1,"Wagener, South Carolina",Maggie Gantt,Personal Banker,18
+157,26,1,"Sutter, California",Valerie Eredia,Personal Trainer,18
+158,29,Winner,"Louisville, Kentucky",Whitney Bischoff,Fertility Nurse,19
+159,26,Runner-up,"Shreveport, Louisiana",Becca Tilley,Chiropractic Assistant,19
+160,29,9,"Leduc, Alberta",Kaitlyn Bristowe,Dance Instructor,19
+161,28,8,"Gering, Nebraska",Jade Roper,Cosmetics Developer,19
+162,29,7,"Arlington, Texas",Carly Waddell,Cruise Ship Singer,19
+163,27,7,"Hollywood, California",Britt Nilsson,Waitress,19
+164,24,6,"Nashville, Tennessee",Megan Bell,Make-Up Artist,19
+165,28,6,"Hudsonville, Michigan",Kelsey Poe,Guidance Counselor,19
+166,26,6,"Great Falls, Virginia",Ashley Iaconetti,Nanny/Freelance Journalist,19
+167,21,5,"Maple Valley, Washington",Mackenzie Deonigi,Dental Assistant,19
+168,27,5,"Indianapolis, Indiana",Samantha Steffen,Fashion Designer,19
+169,24,4,"Brooklyn, New York",Ashley Salter,Hair Stylist,19
+170,30,4,"Portland, Oregon",Juelia Kinney,Esthetician,19
+171,26,4,"New York, New York",Nikki Delventhal,Former NFL Cheerleader,19
+172,25,4,"Howland, Ohio",Jillian Anderson,News Producer,19
+173,29,3,"Kankakee, Illinois",Amber James,Bartender,19
+174,29,3,"Wellington, Florida",Tracy Darakis,Fourth Grade Teacher,19
+175,33,3,"Algonquin, Illinois",Trina Scherenberg,Special Education Teacher,19
+176,24,2,"Hamilton, New Jersey",Alissa Giambrone,Flight Attendant,19
+177,24,2,"Windsor, Colorado",Jordan Branch,Student,19
+178,28,2,"Wantagh, New York",Kimberly Sherbach,Yoga Instructor,19
+179,30,2,"Sandy, Utah",Tandra Steiner,Executive Assistant,19
+180,26,2,"Fort Lauderdale, Florida",Tara Eddings,Sport Fishing Enthusiast,19
+181,24,1,"Lake in the Hills, Illinois",Amanda Goerlitz,Ballet Teacher,19
+182,25,1,"Carpinteria, California",Bo Stanley,Plus-Size Model,19
+183,26,1,"Temecula, California",Brittany Fetkin,WWE Diva-in-Training,19
+184,25,1,"Brownsville, Kentucky",Kara Wilson,High School Soccer Coach,19
+185,25,1,"Provo, Utah",Michelle Davis,Wedding Cake Baker,19
+186,31,1,"Scottsdale, Arizona",Nicole Meacham,Real Estate Agent,19
+187,28,1,"Manhattan Beach, California",Reegan Cornwell,Cadaver Tissue Saleswoman,19
+188,33,bachelor,"Cleveland, Ohio",Jason Mesnick,Account executive,13
+189,32,bachelor,"Dallas, Texas",Jake Pavelka,Commercial pilot,14
+190,37,bachelor,"Austin, Texas",Brad Womack,See above,15
+191,28,bachelor,"Sonoma, California",Ben Flajnik,Winemaker,16
+192,30,bachelor,"Arlington, Texas",Sean Lowe,Insurance Agent,17
+193,33,bachelor,"Ithaca, New York",Juan Pablo Galavis,Former pro soccer player,18
+194,33,bachelor,"Arlington, Iowa",Chris Soules,Farmer,19
