@@ -1,4 +1,6 @@
 from types import *
+from collections import Counter
+import operator
 import re
 
 def getCompetitionDetails(wikiPages, seasons):
@@ -29,7 +31,6 @@ def getCompetitionDetails(wikiPages, seasons):
                             
                             if not episodeIndex % 2 == 0:
                                 episodeNumber = (episodeIndex+1) / 2
-                                print 'Episode', episodeNumber
                                 if episodeIndex+1 < len(episodesDetails):
                                     episodeSummary = episodesDetails[episodeIndex+1].text
                                     episodeTitle = episodeDetails.find('td', {'class':'summary'}).text
@@ -66,84 +67,146 @@ def getCompetitionDetails(wikiPages, seasons):
 
 
 
-def getContestantCompData(competitionDetails, seasons):
+def getContestantCompData(competitionDetails, allContestants):
     contestantCompData = {} 
     newerSeasons = [18, 19]
-    for sn in seasons:
+    
+    for sn in list(allContestants.keys()):
         contestantsData = {}
+        # for each episode determine who had a group or one on one date and whether they got a rose 
         for weekIndex, weekDetails in enumerate(competitionDetails[sn]):
             if sn in newerSeasons:
                 episodeSummary = weekDetails
-                hasIndividualDates = 'One-on-One Date:' in episodeSummary
-                hasGroupDates = 'Group Date:' in episodeSummary
-                hasNoDates = True
-                # find the one on one dates
+                hasIndividualDates = 'one-on-one' in episodeSummary.lower() or 'two-on-one' in episodeSummary.lower()
+                hasGroupDates = 'group date:' in episodeSummary.lower()
+                
                 if hasIndividualDates or hasGroupDates:
-                    for marker in ['One-on-One Date:', 'Group Date:']:
-                        if not marker in episodeSummary:
+                    for marker in ['one-on-one', 'group date:', 'two-on-one']:
+                        dateType = marker.replace(' date:','') 
+                        if not marker in episodeSummary.lower():
                             continue
-                        start = len(marker)+1+episodeSummary.index(marker)
-                        end = start + episodeSummary[start:].index('.')
-                        contestants = episodeSummary[start:end]
-                        if 'and' in contestants:
-                            contestants = contestants.replace(' and', ',')
-                        contestants = contestants.replace(' ', '').split(',')
+                        # find all indexes of the markers specified
+                        markerIndexes = [m.end() for m in re.finditer(marker, episodeSummary.lower())]
+                        for markerIndex in markerIndexes:                        
+                            endOfContestants = markerIndex + episodeSummary[markerIndex:].index('. ')
+                            contestants = episodeSummary[markerIndex:endOfContestants]
+                            endOfSection = episodeSummary[markerIndex:].index('\n') + markerIndex
+                            section = episodeSummary[markerIndex:endOfSection]
+                            generateRoseData(allContestants[sn], contestantsData, weekIndex+1, dateType, contestants, section)
 
-                        for contestant in contestants:
-                            if contestant in contestantsData:
-                                contestantsData[contestant].append(marker)
-                            else:
-                                contestantsData[contestant] = [marker]   
-                        
-                elif ':' in episodeSummary:
-                    ends = [m.start() for m in re.finditer(':', episodeSummary)]
-                    #start = [start + episodeSummary[start:].index('.') for start in starts]
-                    contestants = []
-                    for end in ends:
-                        start = end-10
-                        substring = episodeSummary[start:end]
-                        if '\n' in substring:
-                            start = substring.index('\n')
-                            contestant = substring[start+1:end]
-                        else:
-                            contestant = substring
-                        
-                        contestants.append(contestant)
-                        
-                    for contestant in contestants:
-                        if contestant in contestantsData:
-                            contestantsData[contestant].append('One-on-one Date')
-                        else:
-                            contestantsData[contestant] = ['One-on-one Date']              
             else:
                 for detailsIndex, details in enumerate(weekDetails):
                     if not(type(details.b) == NoneType):
-                        eventType = details.b.text
-                        if "One-on-one" in eventType or "Two-on-one" in eventType or "Group" in eventType:
+                        dateType = details.b.text.lower()
+                        if "one-on-one" in dateType or "two-on-one" in dateType or "group" in dateType:
                             start = details.text.index(':') +2
-                            end = details.text.index('.')
+                            end = details.text.index('. ')
                             contestants = details.text[start:end]
-                            if 'and' in contestants:
-                                contestants = contestants.replace(' and', ',')
-                            contestants = contestants.replace(' ', '').split(',')
-
-                            for contestant in contestants:
-                                if contestant in contestantsData:
-                                    contestantsData[contestant].append(eventType)
-                                else:
-                                    contestantsData[contestant] = [eventType]
+                            generateRoseData(allContestants[sn], contestantsData, weekIndex+1, dateType, contestants, details.text)
                                     
         contestantCompData[sn] = contestantsData
         
     return contestantCompData
   
+def generateRoseData(allContestants, contestantsData, week, dateType, contestantsOnDate, section):
 
+    # find the contestants that are on the date 
+    contestants = []
+    for contestant in allContestants:
+        contestantFirstName = contestant['name'].split(' ')[0]
+        if contestantFirstName in contestantsOnDate:
+            contestants.append(contestantFirstName)
+    # account for any contestants with same name
+    contestants = dict(Counter(contestants))
+    contestantsToRemove = []
+    contestantsToAdd = []
+    for name in contestants:
+        if contestants[name] > 1:
+            contestantsToRemove.append(name)
+            for contestant in allContestants:
+                if name in contestant['name']:
+                    fullName = contestant['name'].split(' ')
+                    if len(fullName) == 3:
+                        firstName, middleName, lastName = fullName
+                        if '(' in lastName and ')' in lastName:
+                            ref = lastName
+                            lastName = middleName
+                            searchableName = firstName+' '+ref
+                    else:
+                        firstName, lastName = fullName
+                        searchableName = firstName+' '+lastName[0]
+                        #searchableName2 = firstName+lastName[0]
+                    if searchableName in contestantsOnDate:
+                        contestantsToAdd.append(searchableName)
+
+    for name in contestantsToRemove:
+        del contestants[name]
+
+    for name in contestantsToAdd:
+        contestants[name] = 1
+
+    contestants = contestants.keys()
+    
+
+    # determine who got a rose
+    if 'rose' in section:
+        roseIndex = section.index('rose')
+        endOfSentence = section[roseIndex:].index('.') + roseIndex
+        startOfSentence = endOfSentence - section[:endOfSentence][::-1].index('.') + 1
+        roseSentence = section[startOfSentence:endOfSentence]
+        
+        for contestant in contestants:
+            contestantFirstName = contestant.split(' ')[0]
+            receivedRose = False
+            for got in ['got', 'receiv', 'gets', 'presents', 'gives','holds','has','giving', 'gave', 'extend']:
+                if got in roseSentence and not (' not ' in roseSentence):
+                    if contestantFirstName in roseSentence:
+                        receivedRose = True
+                        break
+                    elif 'one' in dateType: # we assume the pronoun refers to contestant on the date
+                            receivedRose = True
+                            break
+                    elif 'group' in dateType: # we assume the pronoun refers to the last mentioned contestant
+                        contestantIndex = {}
+                        for c in contestants:
+                            contestantIndex[c.split(' ')[0]] = section[:endOfSentence][::-1].index(c.split(' ')[0][::-1])
+
+                        closestContestant = min(contestantIndex.iteritems(), key=operator.itemgetter(1))[0]
+                        if closestContestant in contestant:
+                            receivedRose = True
+                            break
+                            
+            compData = (week, dateType, receivedRose)
+
+            if contestant in contestantsData:
+                contestantsData[contestant].append(compData)
+            else:
+                contestantsData[contestant] = [compData] 
+def getWeeklyCompData(contestantCompData):
+    result = {}
+    for sn in contestantCompData:
+        weeklyCompData = {}
+        for contestant in contestantCompData[sn]: 
+            dates = contestantCompData[sn][contestant]
+            for week,dateType,receivedRose in dates:
+                if not week in weeklyCompData:
+                    weeklyCompData[week] = {}
+                if not contestant in weeklyCompData[week]:
+                    weeklyCompData[week][contestant] = {}
+                if not dateType in weeklyCompData[week][contestant]:
+                    weeklyCompData[week][contestant][dateType] = {}
+
+                weeklyCompData[week][contestant][dateType] = receivedRose
+        result[sn] = weeklyCompData
+    return result
 
 def addCompetitionData(seasonsDict, contestantCompData):
     for sn in seasonsDict:    
         for contestant in seasonsDict[sn]:
             contestant['group_dates'] = 0
             contestant['individual_dates'] = 0
+            contestant['roses_from_group_dates'] =  0
+            contestant['roses_from_individual_dates'] = 0
             for contestantFirstName in contestantCompData[sn]:
                 contestantName = "None"
                 if contestantFirstName == "" or " " in contestantFirstName or len(contestantFirstName) < 3:
@@ -152,11 +215,25 @@ def addCompetitionData(seasonsDict, contestantCompData):
                     contestantName = contestantFirstName[:-1] + ' ' + contestantFirstName[-1]
 
                 if contestantFirstName in contestant['name'] or contestantName in contestant['name']:
-                    compData = contestantCompData[sn][contestantFirstName]
-                    compData = '_'.join(compData).lower()
-                    groupDates = len([m.start() for m in re.finditer('group', compData)])
-                    individualDates = len([m.start() for m in re.finditer('on-one', compData)])
-                    contestant['group_dates'] = groupDates
-                    contestant['individual_dates'] = individualDates
+                    dates = contestantCompData[sn][contestantFirstName]
+                    numGroupDates = 0
+                    numIndividualDates = 0
+                    numRoseOnGroupDates = 0
+                    numRoseOnIndividualDates = 0
+                    for week, dateType, receivedRose in dates:
+                        if 'group' in dateType.lower():
+                            numGroupDates += 1
+                            if receivedRose:
+                                numRoseOnGroupDates += 1
+                        if 'one' in dateType.lower():
+                            numIndividualDates += 1
+                            if receivedRose:
+                                numRoseOnIndividualDates += 1
+                        
+                    
+                    contestant['group_dates'] = numGroupDates
+                    contestant['individual_dates'] = numIndividualDates
+                    contestant['roses_from_group_dates'] =  numRoseOnGroupDates
+                    contestant['roses_from_individual_dates'] = numRoseOnIndividualDates
                     break
 
