@@ -29,7 +29,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 #### [*Twitter Sentiment*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_analysis.html)
 - We analze each tweet per contestant per episode, and use a text processing API to determine each tweet's probability of being positive. We then formulate an overall contestant positivity index per episode.
 
-#### *Professions*
+#### [*Professions*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/profession.html)
 - We cluster each contestant's profession according to the [International Standard Classification of Occupations](http://www.ilo.org/public/english/bureau/stat/isco/) (ISCO) using a text analysis of the Wikipedia data.
 
 #### [*Hometown Distance*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/distances.html)
