@@ -32,10 +32,10 @@ We analyze underlying features of all winning and losing contestants on the The 
 #### *Professions*
 - We cluster each contestant's profession according to the [International Standard Classification of Occupations](http://www.ilo.org/public/english/bureau/stat/isco/) (ISCO) using a text analysis of the Wikipedia data.
 
-#### [*Hometown Distance*](https://github.com/kathrynheal/MR-DC-KH-Final-Project/blob/distances/distances.html)
+#### [*Hometown Distance*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/distances.html)
 - We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. 
 
-#### [*Hometown Clustering*](https://github.com/kathrynheal/MR-DC-KH-Final-Project/blob/distances/geocluster.html) 
+#### [*Hometown Clustering*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/geocluster.html) 
 - We cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
 
 #### *Photographs - Principle Component Analysis*
