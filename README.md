@@ -32,8 +32,11 @@ We analyze underlying features of all winning and losing contestants on the The 
 #### *Professions*
 - We cluster each contestant's profession according to the [International Standard Classification of Occupations](http://www.ilo.org/public/english/bureau/stat/isco/) (ISCO) using a text analysis of the Wikipedia data.
 
-#### *Hometowns*
-- We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. Additionally, we cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
+#### [*Hometown Distance*](https://github.com/kathrynheal/MR-DC-KH-Final-Project/blob/distances/distances.html)
+- We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. 
+
+#### [*Hometown Clustering*](https://github.com/kathrynheal/MR-DC-KH-Final-Project/blob/distances/geocluster.html) 
+- We cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
 
 #### *Photographs - Principle Component Analysis*
 - We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
