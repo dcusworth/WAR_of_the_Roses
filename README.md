@@ -11,8 +11,9 @@ The Bachelor is a competition based reality TV show. Each season, about 30 women
 ### Objective
 We analyze underlying features of all winning and losing contestants on the The Bachelor. Using these data, we build a statistical model to predict week-by-week success on the TV show.
 
+-----
 # Contents
-----------
+
 
 ### Data Scraping
 
@@ -22,7 +23,8 @@ We analyze underlying features of all winning and losing contestants on the The 
 #### *Wikipedia*
 - We gather each contestant's name, age, and hometown per season according to data on Wikipedia. Additionally, for each season we gather how many group dates, one-on-one dates, and group date roses a contestant received.
 
-### Exploratory Data Analysis / Cleaning Data
+--
+### Exploratory Data Analysis / Data-Cleaning
 
 #### *Twitter Sentiment*
 - We analze each tweet per contestant per episode, and use a text processing API to determine each tweet's probability of being positive. We then formulate an overall contestant positivity index per episode.
@@ -34,6 +36,9 @@ We analyze underlying features of all winning and losing contestants on the The 
 - We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. Additionally, we cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
 
 #### *Photographs - Principle Component Analysis*
+- We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
 
-### Classification / Prediction
+--
+### Classification / Prediction / Visualization
+- Using each of the predictors from our Data-Cleaning section, we fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
 
