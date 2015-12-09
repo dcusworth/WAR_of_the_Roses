@@ -17,29 +17,29 @@ We analyze underlying features of all winning and losing contestants on the The 
 
 ### Data Scraping
 
-#### [*Twitter*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_scrape.html)
-- We show how we scraped twitter to get all tweets per contestant per episode of The Bachelor.
+* #### [*Twitter*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_scrape.html)
+  - We show how we scraped twitter to get all tweets per contestant per episode of The Bachelor.
 
-#### [*Wikipedia*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/wiki.html)
-- We gather each contestant's name, age, and hometown per season according to data on Wikipedia. Additionally, for each season we gather how many group dates, one-on-one dates, and group date roses a contestant received.
+* #### [*Wikipedia*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/wiki.html)
+  - We gather each contestant's name, age, and hometown per season according to data on Wikipedia. Additionally, for each season we gather how many group dates, one-on-one dates, and group date roses a contestant received.
 
 --
 ### Exploratory Data Analysis / Data-Cleaning
 
-#### [*Twitter Sentiment*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_analysis.html)
-- We analze each tweet per contestant per episode, and use a text processing API to determine each tweet's probability of being positive. We then formulate an overall contestant positivity index per episode.
+* #### [*Twitter Sentiment*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_analysis.html)
+  - We analze each tweet per contestant per episode, and use a text processing API to determine each tweet's probability of being positive. We then formulate an overall contestant positivity index per episode.
 
-#### [*Professions*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/profession.html)
-- We cluster each contestant's profession according to the [International Standard Classification of Occupations](http://www.ilo.org/public/english/bureau/stat/isco/) (ISCO) using a text analysis of the Wikipedia data.
+* #### [*Professions*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/profession.html)
+  - We cluster each contestant's profession according to the [International Standard Classification of Occupations](http://www.ilo.org/public/english/bureau/stat/isco/) (ISCO) using a text analysis of the Wikipedia data.
 
-#### [*Hometown Distance*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/distances.html)
-- We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. 
+* #### [*Hometown Distance*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/distances.html)
+  - We compute the geographic distance between each contestant's hometown and the bachelor's hometown using the GeoPy library. 
 
-#### [*Hometown Clustering*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/geocluster.html) 
-- We cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
+* #### [*Hometown Clustering*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/geocluster.html) 
+  - We cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
 
-#### *Photographs - Principle Component Analysis*
-- We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
+* #### *Photographs - Principle Component Analysis*
+  - We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
 
 --
 ### Classification / Prediction / Visualization
