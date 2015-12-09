@@ -20,7 +20,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 #### [*Twitter*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_scrape.html)
 - We show how we scraped twitter to get all tweets per contestant per episode of The Bachelor.
 
-#### *Wikipedia*
+#### [*Wikipedia*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/wiki.html)
 - We gather each contestant's name, age, and hometown per season according to data on Wikipedia. Additionally, for each season we gather how many group dates, one-on-one dates, and group date roses a contestant received.
 
 --
