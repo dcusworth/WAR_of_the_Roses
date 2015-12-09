@@ -17,7 +17,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 
 ### Data Scraping
 
-#### *Twitter*
+#### [*Twitter*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_scrape.html)
 - We show how we scraped twitter to get all tweets per contestant per episode of The Bachelor.
 
 #### *Wikipedia*
@@ -26,7 +26,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 --
 ### Exploratory Data Analysis / Data-Cleaning
 
-#### *Twitter Sentiment*
+#### [*Twitter Sentiment*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/twitter_analysis.html)
 - We analze each tweet per contestant per episode, and use a text processing API to determine each tweet's probability of being positive. We then formulate an overall contestant positivity index per episode.
 
 #### *Professions*
