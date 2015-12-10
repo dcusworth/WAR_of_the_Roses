@@ -42,10 +42,9 @@ We analyze underlying features of all winning and losing contestants on the The 
   - We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
 
 --
-### Final Analysis
 
-* #### [*Classification / Prediction / Visualization*]
-  - Using each of the predictors from our Data-Cleaning section, we fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
+### [*Classification / Prediction / Visualization*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/)
+* Using each of the predictors from our Data-Cleaning section, we fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
 
 --
 # Conclusions
