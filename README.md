@@ -43,11 +43,11 @@ We analyze underlying features of all winning and losing contestants on the The 
 
 --
 ### Final Analysis
-* #### *Classification / Prediction / Visualization*
+* #### [*Classification / Prediction / Visualization*]
   - Using each of the predictors from our Data-Cleaning section, we fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
 
 --
-### Conclusions
+# Conclusions
 * From fitting a unique classifier to the data each week, we find a broad consistent pattern among the data - the percentage of tweets a candidate receives in the previous week’s episodes very well influences their chances of advancing the following week. These results illuminate a producer’s point of view, Reality television is just like narrative television – the star gets the most screen time. Since the producers edit with the winner in mind, it makes sense that the bulk number of tweets serves as a proxy for screen time, and relatedly, likelihood of survival.
 * There are two possible reasons for why our other predictors weren’t as influential. 1) The Bachelor has only been around for 19 seasons, so maybe in 2060 when we’re watching Bachelor in Space, patterns will emerge more clearly. 2) since the show is set up so the Bachelor only has eight weeks to decide who out of thirty women he would like to spend his life, perhaps his choice is just a simple random process. 
 * To make a strong case for conclusion (2), we would want to engineer our features even more to optimize their signal. For example, we currently use the first two principal components of a contestant's entire face as features. We could improve this method with more advanced deep learning image processing algorithms that would decompose specific facial features (e.g., nose, ear, hair, etc.). After optimizing our features, we can then refit a classifier each week. If the feature still provides no information in the regression, we would then be more confident that it is uninformative.
