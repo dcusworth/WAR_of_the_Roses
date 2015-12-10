@@ -43,6 +43,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 
 --
 ### Final Analysis
+
 * #### [*Classification / Prediction / Visualization*]
   - Using each of the predictors from our Data-Cleaning section, we fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
 
