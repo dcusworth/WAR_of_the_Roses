@@ -185,7 +185,6 @@ def change_winner_runnerup(v):
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cross_validation import train_test_split
 
-Xs=subdfstd.values
 def classify(X,y, nbrs, plotit=True, train_size=0.6):
     Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, train_size=train_size)
     clf= KNeighborsClassifier(nbrs)
