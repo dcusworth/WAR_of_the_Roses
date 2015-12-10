@@ -38,7 +38,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 * #### [*Hometown Clustering*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/geocluster.html) 
   - We cluster each contestant's hometown according to [FCC Economic Area Groupings] (http://transition.fcc.gov/oet/info/maps/areas/)
 
-* #### *Photographs - Principle Component Analysis*
+* #### [*Photographs - Principle Component Analysis*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/pca.html)
   - We use studio photographs from seasons 13-19 of The Bachelor and run a principle component analysis (PCA) on each image. We plot the first two principle components and color them according to success on the show.
 
 --
