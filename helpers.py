@@ -154,8 +154,8 @@ def plot_decision_surface(clf, X_train, Y_train):
     if X_train.shape[1] != 2:
         raise ValueError("X_train should have exactly 2 columnns!")
     
-    x_min, x_max = X_train[:, 0].min() - plot_step, X_train[:, 0].max() + plot_step
-    y_min, y_max = X_train[:, 1].min() - plot_step, X_train[:, 1].max() + plot_step
+    x_min, x_max = float(X_train[:, 0].min()) - plot_step, float(X_train[:, 0].max()) + plot_step
+    y_min, y_max = float(X_train[:, 1].min()) - plot_step, float(X_train[:, 1].max()) + plot_step
     xx, yy = np.meshgrid(np.arange(x_min, x_max, plot_step),
                          np.arange(y_min, y_max, plot_step))
 
