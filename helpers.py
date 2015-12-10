@@ -180,3 +180,24 @@ def change_winner_runnerup(v):
                 return num
     else:
         return v
+
+# we use the classify function to plot the classifiers
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.cross_validation import train_test_split
+
+Xs=subdfstd.values
+def classify(X,y, nbrs, plotit=True, train_size=0.6):
+    Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, train_size=train_size)
+    clf= KNeighborsClassifier(nbrs)
+    clf=clf.fit(Xtrain, ytrain)
+    #in sklearn accuracy can be found by using "score". It predicts and then gets the accuracy
+    training_accuracy = clf.score(Xtrain, ytrain)
+    test_accuracy = clf.score(Xtest, ytest)
+    Xall=np.concatenate((Xtrain, Xtest))
+    if plotit:
+        print "Accuracy on training data: %0.2f" % (training_accuracy)
+        print "Accuracy on test data:     %0.2f" % (test_accuracy)
+        plt.figure()
+        ax=plt.gca()
+        points_plot(ax, Xtrain, Xtest, ytrain, ytest, clf, alpha=0.3, psize=20)
+    return nbrs, training_accuracy, test_accuracy
