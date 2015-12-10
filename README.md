@@ -14,6 +14,7 @@ We analyze underlying features of all winning and losing contestants on the The 
 -----
 # Contents
 
+Below we link to each of the ipython notebooks that were used in our analyses.
 
 ### Data Scraping
 
