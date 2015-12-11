@@ -14,7 +14,7 @@ We want to answer the following questions: 1) Can we predict weekly success on t
 -----
 # Contents
 
-Below we link to each of the ipython notebooks that were used in our analyses.
+Below we link to each of the ipython notebooks that were used in our analyses. To get the raw iPython notebooks, switch between branches above. Each branch contains a seperate data scraping or analysis method.
 
 ### Data Scraping
 
