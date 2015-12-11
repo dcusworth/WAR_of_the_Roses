@@ -46,11 +46,11 @@ Below we link to HTML files of each of the iPython notebooks that were used in o
 
 ### Final Analysis
 
-* #### [*Prediction of Elimination Week*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/stats_elim.html)
- - Here we use logistic and linear regression methods to predict a contestant's which week a contestant will be eliminated (or win) based on our predictor variables outlined in the Data-Cleaning section.
-
 * #### [*Weekly Prediction of Advancing*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/stats_weekly.html)
- - We fit a unique classifier to our data for each episode from seasons 13-19, using cross-validation on a testing set. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
+ - We fit a unique classifier to our data for each episode from seasons 13-19 to predict a contestant's chances of surviving elimination that each week. We report accuracy of the classifier on our training set. We visualize the relative importance of each predictor
+
+* #### [*Prediction of Winning It All / Elimination Week*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/stats_elim.html)
+ - Here we use logistic and linear regression methods to predict a contestant's which week a contestant will be eliminated (or win) based on our predictor variables outlined in the Data-Cleaning section. We look at the correlation between predictor variables
 
 --
 # Conclusions
