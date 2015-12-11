@@ -46,7 +46,7 @@ Below we link to each of the ipython notebooks that were used in our analyses. T
 
 ### Final Analysis
 
-* #### [*Prediction of Elimination Week*] 
+* #### [*Prediction of Elimination Week*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/stats_elim.html)
  - Here we use logistic and linear regression methods to predict a contestant's which week a contestant will be eliminated (or win) based on our predictor variables outlined in the Data-Cleaning section.
 
 * #### [*Weekly Prediction of Advancing*](http://kathrynheal.github.io/MR-DC-KH-Final-Project/stats_weekly.html)
